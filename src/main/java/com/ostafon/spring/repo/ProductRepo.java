@@ -1,6 +1,6 @@
-package com.telusko.springecom.repo;
+package com.ostafon.spring.repo;
 
-import com.telusko.springecom.model.Product;
+import com.ostafon.spring.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

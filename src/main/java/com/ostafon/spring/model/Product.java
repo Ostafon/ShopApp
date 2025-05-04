@@ -1,6 +1,5 @@
-package com.telusko.springecom.model;
+package com.ostafon.spring.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

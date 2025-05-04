@@ -1,4 +1,4 @@
-package com.telusko.springecom;
+package com.ostafon.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

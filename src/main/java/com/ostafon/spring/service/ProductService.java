@@ -1,8 +1,7 @@
-package com.telusko.springecom.service;
+package com.ostafon.spring.service;
 
-import com.telusko.springecom.model.Product;
-import com.telusko.springecom.repo.ProductRepo;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ostafon.spring.model.Product;
+import com.ostafon.spring.repo.ProductRepo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -12,8 +11,11 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    @Autowired
-    private ProductRepo productRepo;
+    private final ProductRepo productRepo;
+
+    public ProductService(ProductRepo productRepo) {
+        this.productRepo = productRepo;
+    }
 
     public List<Product> getAllProducts() {
         return productRepo.findAll();
